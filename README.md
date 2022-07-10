@@ -26,6 +26,7 @@ First we read the data using Data Read file and then pass it to Data handling fi
 
 Testing Pipeline
  Similar to training we need to read the data using Data Read file and then handle the data(missing values, Text data Handling, categorical encoding). After Handling the data and scaling them we will make use of the saved model to test the data and save the predicted result as a csv. Here for testing process we use the saved categorical encoder and saved scaler instead of newly creating. Also in the end it will display the metrics used for rating.
+  <p dir="auto"><a target="_blank" rel="noopener noreferrer" href="Testing.jpg"><img src="Testing.jpg" alt="" style="max-width: 100%;"></a>
 
 NLP Text Handling
 For columns like title, department, company profile, job description etc for all the categorical I have used NLTK functions like stop words, Stemming and Word net synset to find out a similarity factor between columns eg: similarity between job title and job description. Using various combinations I have formed various new columns which represent such kind of similarities. Now all these columns are used in the Random Forest algorithm to find the Fake jobs. With all these steps I have reached precision of 97% and f1-score of 0.97
