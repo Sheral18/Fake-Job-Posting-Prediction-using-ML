@@ -9,16 +9,20 @@ There are 17880 samples in the dataset in which 17014 are real job data and 866 
 
 Pipeline Overview
  This is a overall view of the files and functionalities used in both the pipelines in the project. 
- https://github.com/saketh97/FakeJobPrediction/raw/master/images/mainpipelineimage.jpg
- <p dir="auto"><a target="_blank" rel="noopener noreferrer" href="D:/Machine Learning/Fake Job Listing Prediction/pipeline.jpg"><img src="D:/Machine Learning/Fake Job Listing Prediction/pipeline.jpg" alt="" style="max-width: 100%;"></a>
+
+ <p dir="auto"><a target="_blank" rel="noopener noreferrer" href="pipeline.jpg"><img src="pipeline.jpg" alt="" style="max-width: 100%;"></a>
 
 Training Pipeline
+ 
+
  The training process contains 3 major steps
 
 Data Reading
 Data Handling
 Model
-First we read the data using Data Read file and then pass it to Data handling file where the missing values, Text data Handling takes place and finally categorical encoding is done for category columns. After Handling the data and scaling then we will utilize Random Forest algorithm to create and train model on the cleaned data. 
+First we read the data using Data Read file and then pass it to Data handling file where the missing values, Text data Handling takes place and finally categorical encoding is done for category columns. After Handling the data and scaling then we will utilize Random Forest algorithm to create and train model on the cleaned data.
+ <p dir="auto"><a target="_blank" rel="noopener noreferrer" href="Training.jpg"><img src="Training.jpg" alt="" style="max-width: 100%;"></a>
+ 
 
 Testing Pipeline
  Similar to training we need to read the data using Data Read file and then handle the data(missing values, Text data Handling, categorical encoding). After Handling the data and scaling them we will make use of the saved model to test the data and save the predicted result as a csv. Here for testing process we use the saved categorical encoder and saved scaler instead of newly creating. Also in the end it will display the metrics used for rating.
