@@ -5,7 +5,7 @@ This is a classifier that uses NLP to determine if a job posting is real or fake
 
  There are 18 columns like title, department, company profile, job description etc. I will use NLP Techniques to analyse text data and prepare them for prediction model to train. Also this complete project uses pipeline concept automating the train and test process. Once the training is complete the model will be saved as a pickle file to load whenever we need to predict.
 
-There are 17880 samples in the dataset in which 17014 are real job data and 866 are fake job data. The data is biased towards real job data so the main parameters used to rate prediction is not just accuracy but F1-score, Precision and recall as well. Before starting the whole coding process I have split the data into two datasets Train with 97% split and Test with 3% split. For the model I have used Random Forest Classifier which at the end has achieved F1-score 0.80 and Precision of 94.4% with accuracy around 98%.
+There are 17880 samples in the dataset in which 17014 are real job data and 866 are fake job data. The data is biased towards real job data so the main parameters used to rate prediction is not just accuracy but F1-score, Precision and recall as well. Before starting the whole coding process I have split the data into two datasets Train with 97% split and Test with 3% split. For the model I have used Random Forest Classifier which at the end has achieved F1-score 0.97  with accuracy around 97%.
 
 Pipeline Overview
  This is a overall view of the files and functionalities used in both the pipelines in the project. 
